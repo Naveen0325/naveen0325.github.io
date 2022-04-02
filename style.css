@@ -48,9 +48,11 @@ nav .navbar{
 nav .navbar .logo a{
   font-weight: 500;
   font-size: 35px;
+  margin-left: 30px;
   color: #4070f4;
 }
 nav.sticky .navbar .logo a{
+  font-size: 35px;
   color: #fff;
 }
 nav.sticky .navbar .logo a:hover{
@@ -93,7 +95,16 @@ nav.sticky .media-icons a{
 }
 
 /* Side Navigation Menu Button CSS */
-nav .menu-btn,
+nav .menu-btn{
+  position: absolute;
+  color: #fff;
+  left: 30px;
+  top: 25px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: none;
+}
 .navbar .menu .cancel-btn{
   position: absolute;
   color: #fff;
@@ -118,7 +129,7 @@ nav.sticky .menu-btn{
 .home{
   height: 100vh;
   width: 100%;
-  background: url("Images/background.png") no-repeat;
+  background: url("images/background.png") no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -140,11 +151,12 @@ nav.sticky .menu-btn{
   color: #0E2431;
   font-size: 75px;
   font-weight: 600;
-  margin-left: -3px;
+  margin-left: 30px;
 }
 .home .text-three{
   font-size: 40px;
   margin: 5px 0;
+  margin-left: 30px;
   color: #4070f4;
 }
 .home .text-four{
@@ -154,6 +166,7 @@ nav.sticky .menu-btn{
 }
 .home .button{
   margin: 14px 0;
+  margin-left: 30px;
 }
 .home .button button{
   outline: none;
@@ -441,25 +454,6 @@ section  .topic{
   color: #fff;
 }
 
-/* Footer CSS */
-/* footer{
-  background: #4070f4;
-  padding: 15px 0;
-  text-align: center;
-  font-family: 'Poppins', sans-serif;
-}
-footer .text span{
-  font-size: 17px;
-  font-weight: 400;
-  color: #fff;
-}
-footer .text span a{
-  font-weight: 500;
-  color: #FFF;
-}
-footer .text span a:hover{
-  text-decoration: underline;
-} */
 /* Scroll TO Top Button CSS */
 .scroll-button a{
   position: fixed;
