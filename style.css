@@ -16,13 +16,13 @@
     background: #f1f1f1;
 }
 ::-webkit-scrollbar-thumb {
-    background: #6e93f7;
+    background: #D7B38C;
     border-radius: 12px;
     transition: all 0.3s ease;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #4070f4;
+    background: #E1D9D1;
 }
 
 /* navbar styling */
@@ -35,7 +35,7 @@ nav{
   font-family: 'Ubuntu', sans-serif;
 }
 nav.sticky{
-  background: #4070f4;
+  background: #D7B38C;
   padding: 13px 0;
 }
 nav .navbar{
@@ -49,14 +49,14 @@ nav .navbar .logo a{
   font-weight: 500;
   font-size: 35px;
   margin-left: 30px;
-  color: #4070f4;
+  color: #D7B38C;
 }
 nav.sticky .navbar .logo a{
   font-size: 35px;
   color: #fff;
 }
 nav.sticky .navbar .logo a:hover{
-  color: #0E2431;
+  color: #E1D9D1;
 }
 nav .navbar .menu{
   display: flex;
@@ -69,26 +69,26 @@ nav .navbar .menu li{
 .navbar .menu a{
   font-size: 18px;
   font-weight: 500;
-  color: #0E2431;
+  color: #E1D9D1;
   padding: 6px 0;
   transition: all 0.4s ease;
 }
 .navbar .menu a:hover{
-  color: #4070f4;
+  color: #D7B38C;
 }
 nav.sticky .menu a{
   color: #FFF;
 }
 nav.sticky .menu a:hover{
-  color: #0E2431;
+  color: #E1D9D1;
 }
 .navbar .media-icons a{
-  color: #4070f4;
+  color: #FFF;
   font-size: 22px;
   margin: 0 6px;
 }
 .navbar .media-icons a:hover{
-  color: #0E2431;
+  color: #E1D9D1;
 }
 nav.sticky .media-icons a{
   color: #FFF;
@@ -97,13 +97,16 @@ nav.sticky .media-icons a{
 /* Side Navigation Menu Button CSS */
 nav .menu-btn{
   position: absolute;
-  color: #fff;
+  /* color: #fff; */
   left: 30px;
   top: 25px;
   font-size: 20px;
   cursor: pointer;
   transition: all 0.3s ease;
   display: none;
+}
+nav .menu-btn:hover{
+  color: #FFF;
 }
 .navbar .menu .cancel-btn{
   position: absolute;
@@ -115,8 +118,11 @@ nav .menu-btn{
   transition: all 0.3s ease;
   display: none;
 }
+.navbar .menu .cancel-btn:hover{
+  color: #D7B38C;
+}
 nav .menu-btn{
-  color: #4070f4;
+  color: #D7B38C;
 }
 nav.sticky .menu-btn{
   color: #FFF;
@@ -129,10 +135,12 @@ nav.sticky .menu-btn{
 .home{
   height: 100vh;
   width: 100%;
-  background: url("Images/background.png") no-repeat;
-  background-size: cover;
+  background: #090A0A;
+  /* background: #F0F8FF; */
+  /* background: url("mages/background.png") no-repeat; */
+  /* background-size: cover;
   background-position: center;
-  background-attachment: fixed;
+  background-attachment: fixed; */
   font-family: 'Ubuntu', sans-serif;
 }
 .home .home-content{
@@ -145,10 +153,10 @@ nav.sticky .menu-btn{
 }
 .home .text-one{
   font-size: 25px;
-  color: #0E2431;
+  color: #E1D9D1;
 }
 .home .text-two{
-  color: #0E2431;
+  color: #E1D9D1;
   font-size: 75px;
   font-weight: 600;
   margin-left: 30px;
@@ -157,34 +165,51 @@ nav.sticky .menu-btn{
   font-size: 40px;
   margin: 5px 0;
   margin-left: 30px;
-  color: #4070f4;
+  color: #D7B38C;
 }
 .home .text-four{
   font-size: 23px;
   margin: 5px 0;
-  color: #0E2431;
+  color: #E1D9D1;
 }
-.home .button{
-  margin: 14px 0;
+.home a{
+  margin: 5px 0;
   margin-left: 30px;
+  background-color: #D7B38C;
+  color: #090A0A;
+  font-family: sans-serif;
+  padding: 14px 25px;
+  display: inline-block;
+  border-radius: 6px;
 }
+.home a:hover{
+  background-color: #E1D9D1;
+  transition: all 0.4s ease;
+}
+/* 
 .home .button button{
   outline: none;
   padding: 8px 16px;
   border-radius: 6px;
   font-size: 25px;
   font-weight: 400;
-  background: #4070f4;
+  background: #D7B38C;
   color: #fff;
   cursor: pointer;
   border: 2px solid transparent;
   transition: all 0.4s ease;
 }
-.home .button button:hover{
-  border-color: #4070f4;
-  background-color: #fff;
-  color: #4070f4;
+.home .button a{
+  color: #FFF;
 }
+.home .button button:hover{
+  border-color: #D7B38C;
+  background-color: #fff;
+  color: #D7B38C;
+}
+.home .button a:hover{
+  color: #D7B38C;
+} */
 
 /* About Section Styling */
 section{
@@ -194,6 +219,10 @@ section .content{
   width: 80%;
   margin: 40px auto;
   font-family: 'Poppins', sans-serif;
+}
+.about{
+  background: #161718;
+  margin-bottom: -40px;
 }
 .about .about-details{
   display: flex;
@@ -206,7 +235,7 @@ section .title{
   margin-bottom: 40px;
 }
 section .title span{
-  color: #0E2431;
+  color: #FFF;
   font-size: 30px;
   font-weight: 600;
   position: relative;
@@ -218,7 +247,7 @@ section .title span::after{
   position: absolute;
   height: 3px;
   width: 100%;
-  background: #4070f4;
+  background: #D7B38C;
   left: 0;
   bottom: 0;
 }
@@ -241,20 +270,24 @@ section .title span::after{
   width: 60%;
 }
 section  .topic{
-  color: #0E2431;
+  color: #E1D9D1;
   font-size: 25px;
   font-weight: 500;
   margin-bottom: 10px;
 }
 .about-details .right p{
   text-align: justify;
-  color: #0E2431;
+  color: #E1D9D1;
+}
+.about-details .right ul{
+  color: #FFF;
 }
 
  /* My Skills CSS */
  .skills{
-   background: #F0F8FF;
- }
+  background: #090A0A;
+  margin-bottom: -40px;
+}
  .skills .content{
    padding: 40px 0;
  }
@@ -278,14 +311,14 @@ section  .topic{
   display: block;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
-  color: #0E2431;
+  color: #E1D9D1;
 }
 .skills .progress .skill .val {
   float: right;
   font-style: normal;
 }
 .skills .progress .progress-bar{
-  background-color: #0E2431;
+  background-color: #FFF;
   height: 20px;
   width: 500px;
   margin-top: 10px;
@@ -295,7 +328,7 @@ section  .topic{
 .skills .progress .progress-bar .html{
   content: '';
   display: block;
-  background: #4070f4;
+  background: #D7B38C;
   width: 75%;
   height: 100%;
   transition: all 0.4s ease;
@@ -303,7 +336,7 @@ section  .topic{
 .skills .progress .progress-bar .nodejs{
   content: '';
   display: block;
-  background: #4070f4;
+  background: #D7B38C;
   width: 60%;
   height: 100%;
   transition: all 0.4s ease;
@@ -311,7 +344,7 @@ section  .topic{
 .skills .progress .progress-bar .javascript{
   content: '';
   display: block;
-  background: #4070f4;
+  background: #D7B38C;
   width: 60%;
   height: 100%;
   transition: all 0.4s ease;
@@ -319,7 +352,7 @@ section  .topic{
 .skills .progress .progress-bar .java{
   content: '';
   display: block;
-  background: #4070f4;
+  background: #D7B38C;
   width: 65%;
   height: 100%;
   transition: all 0.4s ease;
@@ -327,7 +360,7 @@ section  .topic{
 .skills .progress .progress-bar .mysql{
   content: '';
   display: block;
-  background: #4070f4;
+  background: #D7B38C;
   width: 80%;
   height: 100%;
   transition: all 0.4s ease;
@@ -335,19 +368,24 @@ section  .topic{
 .skills .progress .progress-bar .photoshop{
   content: '';
   display: block;
-  background: #4070f4;
+  background: #D7B38C;
   width: 75%;
   height: 100%;
   transition: all 0.4s ease;
 }
 
 /* My Services CSS */
+.services{
+  background: #161718;
+  margin-bottom: -40px;
+}
 .services .boxes{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 .services .boxes .box{
+  color: #FFF;
   margin: 20px 0;
   width: calc(100% / 3 - 20px);
   text-align: center;
@@ -358,13 +396,16 @@ section  .topic{
   transition: all 0.4s ease;
 }
 .services .boxes .box:hover{
-  background: #4070f4;
-  color: #fff;
+  background: #D7B38C;
+  color: #161718;
+}
+.services .boxes .box a:hover{
+  color: #f1f1f1;
 }
 .services .boxes .box .icon{
   height: 50px;
   width: 50px;
-  background: #4070f4;
+  background: #D7B38C;
   border-radius: 50%;
   text-align: center;
   line-height: 50px;
@@ -375,20 +416,21 @@ section  .topic{
 }
 .boxes .box:hover .icon{
   background-color: #fff;
-  color: #4070f4;
+  color: #D7B38C;
+}
+.boxes .box .icon img{
+  height: 50px;
+  width: 50px;
 }
 .services .boxes .box:hover .topic,
 .services .boxes .box:hover p{
-  color: #0E2431;
+  color: #161718;
   transition: all 0.4s ease;
-}
-.services .boxes .box:hover .topic,
-.services .boxes .box:hover p{
-  color: #fff;
 }
 /* Contact Me CSS */
 .contact{
-  background: #F0F8FF;
+  background: #090A0A;
+  margin-bottom: -40px;
 }
 .contact .boxes{
   display: flex;
@@ -396,6 +438,7 @@ section  .topic{
   justify-content: space-between;
 }
 .contact .boxes .box{
+  color: #FFF;
   margin: 20px 0;
   width: calc(100% / 2 - 20px);
   font-size: 14px;
@@ -407,8 +450,8 @@ section  .topic{
   transition: all 0.4s ease;
 }
 .contact .boxes .box:hover{
-  background: #4070f4;
-  color: #fff;
+  background: #D7B38C;
+  color: #090A0A;
 }
 .contact .boxes .box .media-icons{
   text-align: center;  
@@ -418,19 +461,19 @@ section  .topic{
 .contact .boxes .box .media-icons a{
   font-size: 18px;
   display: inline-block;
-  color: #0E2431;
+  color: #FFF;
   line-height: 1;
   margin-right: 12px;
   transition: 0.3s;
 }
 
 .contact .boxes .box .media-icons a:hover{
-  color: #FFF;
+  color: #090A0A;
 }
 .contact .boxes .box .icon{
   height: 50px;
   width: 50px;
-  background: #4070f4;
+  background: #D7B38C;
   border-radius: 50%;
   text-align: center;
   line-height: 50px;
@@ -441,17 +484,13 @@ section  .topic{
 }
 .boxes .box:hover .icon{
   background-color: #fff;
-  color: #4070f4;
+  color: #D7B38C;
 }
 
 .contact .boxes .box:hover .topic,
 .contact .boxes .box:hover p{
-  color: #0E2431;
+  color: #090A0A;
   transition: all 0.4s ease;
-}
-.contact .boxes .box:hover .topic,
-.contact .boxes .box:hover p{
-  color: #fff;
 }
 
 /* Scroll TO Top Button CSS */
@@ -460,12 +499,15 @@ section  .topic{
   bottom: 20px;
   right: 20px;
   color: #fff;
-  background: #4070f4;
+  background: #D7B38C;
   padding: 7px 12px;;
   font-size: 18px;
   border-radius: 6px;
   box-shadow: rgba(0, 0, 0, 0.15);
   display: none;
+}
+.scroll-button a:hover{
+  color: #E1D9D1;
 }
 
 /* Responsive Media Query */
@@ -533,7 +575,7 @@ section  .topic{
     position: fixed;
     left: -100%;
     top: 0;
-    background: #0E2431;
+    background: #333030;
     height: 100vh;
     max-width: 400px;
     width: 100%;
@@ -552,7 +594,7 @@ section  .topic{
     margin: 10px 0;
   }
   nav.sticky .menu a:hover{
-    color: #4070f4;
+    color: #D7B38C;
   }
   nav .navbar .media-icons{
     display: none;
