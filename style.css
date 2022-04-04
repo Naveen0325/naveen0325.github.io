@@ -270,7 +270,7 @@ section .title span::after{
   width: 60%;
 }
 section  .topic{
-  color: #E1D9D1;
+  color: #FFF;
   font-size: 25px;
   font-weight: 500;
   margin-bottom: 10px;
@@ -288,9 +288,9 @@ section  .topic{
   background: #090A0A;
   margin-bottom: -40px;
 }
- .skills .content{
+ /* .skills .content{
    padding: 40px 0;
- }
+ } */
  .skills .skills-details{
    display: flex;
    justify-content: space-between;
@@ -319,7 +319,7 @@ section  .topic{
 }
 .skills .progress .progress-bar{
   background-color: #FFF;
-  height: 20px;
+  height: 18px;
   width: 500px;
   margin-top: 10px;
   padding: 1px;
@@ -337,7 +337,7 @@ section  .topic{
   content: '';
   display: block;
   background: #D7B38C;
-  width: 60%;
+  width: 55%;
   height: 100%;
   transition: all 0.4s ease;
 }
@@ -345,7 +345,7 @@ section  .topic{
   content: '';
   display: block;
   background: #D7B38C;
-  width: 60%;
+  width: 55%;
   height: 100%;
   transition: all 0.4s ease;
 }
@@ -353,7 +353,7 @@ section  .topic{
   content: '';
   display: block;
   background: #D7B38C;
-  width: 65%;
+  width: 70%;
   height: 100%;
   transition: all 0.4s ease;
 }
@@ -369,7 +369,7 @@ section  .topic{
   content: '';
   display: block;
   background: #D7B38C;
-  width: 75%;
+  width: 65%;
   height: 100%;
   transition: all 0.4s ease;
 }
